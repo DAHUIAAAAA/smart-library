@@ -1,0 +1,157 @@
+<!--pages/library/library.wxml-->
+<view class="page">
+
+  <view class="slide-right {{open?['translate','cover']:''}}">
+
+    <view class="top child-between">
+
+      <view class="slide-click child-align" bindtap='slide_left' style="transform: rotate({{deg}}deg)">
+        <view class="slide-click-after" style="transform: rotate(45deg)"></view>
+      </view>
+
+      <view class="top-bar">
+        <text class="inline-center little-font1">当前位置: {{place}}</text>
+      </view>
+
+    </view>
+
+    <view class="main child-col-center">
+
+      <view class="door">
+        <text class="inline-center little-font4 door-font">大门</text>
+      </view>
+
+      <view class="main-place">
+        <block wx:for="{{desk}}" wx:key="{{index}}">
+          <view class="desk {{open?'none':''}}" data-id="{{index}}">
+            <block wx:for="{{item}}" wx:key="{{index}}">
+              <view class="seat child-align">
+               <image 
+                src="{{item.imageUrl}}" 
+                class="seat-image"
+                data-deskid="{{item.desk}}" 
+                data-seatid="{{index}}"
+                catchtap='seatid'></image>
+              </view>
+           </block>
+          </view>
+        </block>
+      </view>
+
+    </view>
+
+    <view class="foot">
+
+      <view class="foot-seat child-around child-col-center">
+        <image src="iconfont/xuanzuo.png" class="seat-image-foot"></image>
+        <text class="little-font3 inline-center foot-text">空位</text>
+      </view>
+
+      <view class="foot-seat child-around child-col-center">
+        <image src="iconfont/zuowei.png" class="seat-image-foot"></image>
+        <text class="little-font3 inline-center foot-text">有人</text>
+      </view>
+
+      <view class="foot-seat child-around child-col-center">
+        <image src="iconfont/zhanzuo.png" class="seat-image-foot"></image>
+        <text class="little-font3 inline-center foot-text">占座</text>
+      </view>
+
+       <view class="foot-seat child-around child-col-center">
+        <image src="iconfont/likai.png" class="seat-image-foot"></image>
+        <text class="little-font3 inline-center foot-text">离开</text>
+      </view>
+
+    </view>
+
+  </view>
+
+  <view class="slide-left">
+   <view class="slide-left-content">
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor" bindtap="menu_down" data-index="0">一楼</view>
+        <view class="menu {{menu[0]}}">
+          <navigator class="little-font3" data-text="">A1</navigator>
+          <navigator class="little-font3">A2</navigator>
+          <navigator class="little-font3">A3</navigator>
+          <navigator class="little-font3">A4</navigator>
+          <navigator class="little-font3">A5</navigator>
+          <navigator class="little-font3">A6</navigator>
+          <navigator class="little-font3">A7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor" bindtap="menu_down" data-index="1">二楼</view>
+        <view class="menu {{menu[1]}}">
+          <navigator class="little-font3">B1</navigator>
+          <navigator class="little-font3">B2</navigator>
+          <navigator class="little-font3">B3</navigator>
+          <navigator class="little-font3">B4</navigator>
+          <navigator class="little-font3">B5</navigator>
+          <navigator class="little-font3">B6</navigator>
+          <navigator class="little-font3">B7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor" bindtap="menu_down" data-index="2">三楼</view>
+        <view class="menu {{menu[2]}}">
+          <navigator class="little-font3">C1</navigator>
+          <navigator class="little-font3">C2</navigator>
+          <navigator class="little-font3">C3</navigator>
+          <navigator class="little-font3">C4</navigator>
+          <navigator class="little-font3">C5</navigator>
+          <navigator class="little-font3">C6</navigator>
+          <navigator class="little-font3">C7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor" bindtap="menu_down" data-index="3">四楼</view>
+        <view class="menu {{menu[3]}}">
+          <navigator class="little-font3">D1</navigator>
+          <navigator class="little-font3">D2</navigator>
+          <navigator class="little-font3">D3</navigator>
+          <navigator class="little-font3">D4</navigator>
+          <navigator class="little-font3">D5</navigator>
+          <navigator class="little-font3">D6</navigator>
+          <navigator class="little-font3">D7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor"  bindtap="menu_down" data-index="4">五楼</view>
+        <view class="menu {{menu[4]}}">
+          <navigator class="little-font3">E1</navigator>
+          <navigator class="little-font3">E2</navigator>
+          <navigator class="little-font3">E3</navigator>
+          <navigator class="little-font3">E4</navigator>
+          <navigator class="little-font3">E5</navigator>
+          <navigator class="little-font3">E6</navigator>
+          <navigator class="little-font3">E7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor"  bindtap="menu_down" data-index="5">六楼</view>
+        <view class="menu {{menu[5]}}">
+          <navigator class="little-font3">F1</navigator>
+          <navigator class="little-font3">F2</navigator>
+          <navigator class="little-font3">F3</navigator>
+          <navigator class="little-font3">F4</navigator>
+          <navigator class="little-font3">F5</navigator>
+          <navigator class="little-font3">F6</navigator>
+          <navigator class="little-font3">F7</navigator>
+        </view>
+      </view>
+      <view class="slide-text">
+        <view class="normal-font1 font-bold text-center floor"  bindtap="menu_down" data-index="6">七楼</view>
+        <view class="menu {{menu[6]}}">
+          <navigator class="little-font3">G1</navigator>
+          <navigator class="little-font3">G2</navigator>
+          <navigator class="little-font3">G3</navigator>
+          <navigator class="little-font3">G4</navigator>
+          <navigator class="little-font3">G5</navigator>
+          <navigator class="little-font3">G6</navigator>
+          <navigator class="little-font3">G7</navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

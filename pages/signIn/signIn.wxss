@@ -1,0 +1,161 @@
+/* pages/signIn/signIn.wxss */
+
+/* 页面容器 */
+
+page, .page {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#0fa, #10c085);
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  padding-top: 299rpx;
+  box-sizing: border-box;
+}
+
+/* 表单容器 */
+
+.formContainer {
+  width: 90%;
+  height: 50%;
+  margin-top: -100rpx;
+  /* background-color: #ccc; */
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  /* border: 2rpx solid #fff; */
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+/* 表单控件 */
+
+.userForm .userForm-container {
+  width: 100%;
+  /* height:89%; */
+  margin-top: 60rpx;
+  margin-bottom: 60rpx;
+  padding: 50rpx 90rpx 0 90rpx;
+  box-sizing: border-box;
+  /* background-color: black; */
+}
+
+.userForm .userForm-input {
+  margin: 30rpx 0 30rpx 0;
+  position: relative;
+}
+
+/* .userForm-input:nth-child(2){
+  margin-bottom: 0;
+} */
+
+.userForm .userForm-input .user-text {
+  width: 100%;
+  height: 80rpx;
+  box-sizing: border-box;
+  /* height: 50rpx; */
+  border-bottom: 1rpx solid #fff;
+  /* border-radius: 100rpx; */
+  margin-top: 10rpx;
+  color: #fff;
+  padding: 10rpx 80rpx 10rpx 100rpx;
+  /* background-color: rgba(190, 190, 190, 0.2); */
+}
+
+.input-placeholder {
+  color: #ffffffe0;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.user-icon {
+  height: 100%;
+  width: 100rpx;
+  position: absolute;
+  /* background-color: black; *//* text-align: center; */
+  border-radius: 100rpx 0 0 100rpx;
+}
+
+.user-icon-right {
+  right: 0;
+  top: 0;
+  z-index: 0;
+}
+
+.user-icon image {
+  width: 50rpx;
+  height: 50rpx;
+  /* margin-left: 23rpx; */
+}
+
+.showmajor {
+  width: 100%;
+  height: 500rpx;
+  border: 1rpx solid #fff;
+}
+
+/* 登录按钮 */
+
+.signIn {
+  width: 100%;
+  height: 27%;
+  padding: 10rpx 50rpx;
+  box-sizing: border-box;
+}
+
+.signIn view {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 100rpx;
+  border-bottom: 7rpx solid #00868b;
+  /* box-shadow: 0 3rpx 15rpx 15rpx #00CDCD; */
+  background: linear-gradient(#00cdcd, #00cdcd);
+}
+
+/* 忘记密码和点击注册 */
+
+.user-registration {
+  height: 10%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 50rpx 0 50rpx;
+}
+
+.user-registration view {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  /* position: absolute; *//* background-color: black; */
+}
+
+/* @font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.iconfont.eot?#iefix') format('embedded-opentype'),
+      url('iconfont.iconfont.woff2') format('woff2'),
+      url('iconfont.iconfont.woff') format('woff'),
+      url('iconfont.iconfont.ttf') format('truetype'),
+      url('iconfont.iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */

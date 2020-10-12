@@ -1,0 +1,48 @@
+<!--pages/toast/toast.wxml-->
+<view class="page">
+
+    <!-- 头部bar栏 -->
+    <view class="top child-around">
+
+        <view class="top-bar">
+            <text class="inline-center little-font1">智能提醒</text>
+        </view>
+
+    </view>
+
+    <scroll-view class="main pd" scroll-y="true">
+
+        <!-- 更新时间 -->
+        <view class="row little-font5">
+            更新于9:00
+        </view>
+
+        <view class="row">
+            <view class="card">
+                <!-- 温度 -->
+                <view class="row wendu big-font6">34°C</view>
+                <!-- 空气质量 -->
+                <view class="row kongqizhiliang little-font6">空气质量：良</view>
+                <!-- 穿衣提醒 -->
+                <view class="row chuanyitixing little-font6">适合穿短袖、短裤</view>
+            </view>
+        </view>
+        
+        <!-- 更新时间 -->
+        <view class="row little-font5">
+            更新于8:00
+        </view>
+
+        <view class="row">
+            <view class="card">
+                <!-- 温度 -->
+                <view class="row wendu big-font6">32°C</view>
+                <!-- 空气质量 -->
+                <view class="row kongqizhiliang little-font6">空气质量：良</view>
+                <!-- 穿衣提醒 -->
+                <view class="row chuanyitixing little-font6">适合穿短袖、短裤</view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

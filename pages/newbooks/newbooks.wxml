@@ -1,0 +1,50 @@
+<!--pages/newbooks/newbooks.wxml-->
+<view class="page">
+
+    <!-- 头部bar栏 -->
+    <view class="top child-around">
+        <view class="top-bar">
+            <text class="inline-center little-font1">新书通报</text>
+        </view>
+    </view>
+
+    <scroll-view class="main">
+        <!-- nav栏 -->
+        <view class="nav pd row">
+            <image class="icon" src="../../iconfont/xiaolaba.png" mode="widthFix"></image>
+            <scroll-view class="message little-font6" scroll-x>
+                图书馆新购入了一批图书，其中有《世说...
+            </scroll-view>
+        </view>
+
+        <!-- 更新时间栏 -->
+        <view class="row little-font5">
+            更新于9:10
+        </view>
+
+        <view class="row">
+
+            <view class="card">
+                <view class="card-top">
+                    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=248679240,1979233265&fm=26&gp=0.jpg" class="book-image" height="40%" ></image>
+                    <view class="details">
+                        <view class="title big-font5 font-bold">文化苦旅</view>
+                        <view class="jianjie little-font6">《文化苦旅》是当代学者、作家余秋雨的一部散文集。于1992年首次出版，是余秋雨先生...</view>
+                    </view>
+                </view>
+            </view>
+
+            <view class="card">
+                <view class="card-top">
+                    <image src="http://img35.ddimg.cn/37/7/21111985-1_o.jpg" class="book-image" height="100%"></image>
+                    <view class="details">
+                        <view class="title big-font5 font-bold">世说新语</view>
+                        <view class="jianjie little-font6">《世说新语》是南朝时期所作的文言志人小说集，由南朝宋临川王刘义庆组织一批文人编写，又名《世说》。</view>
+                    </view>
+                </view>
+            </view>
+            
+        </view>
+    </scroll-view>
+
+</view>

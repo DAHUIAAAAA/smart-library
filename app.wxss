@@ -1,0 +1,340 @@
+/**app.wxss**/
+.page, page {
+    width: 100%;
+    height: 100%;
+}
+
+.top {
+    height: 10%;
+    width: 100%;
+    background-color: rgba(178, 233, 149, 0.055);
+    position: relative;
+    box-shadow: 0 0 30rpx 3rpx rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    height: 60rpx;
+    width: 380rpx;
+    border-radius: 60rpx;
+    /* border: 5rpx solid #555; */
+    background: #23f1ad;
+    justify-content: around;
+}
+
+.big-font1 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.big-font2 {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.big-font3 {
+    color: #888;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.big-font5 {
+    color: #555;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.normal-font1 {
+    color: #888;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.normal-font2 {
+    color: rgb(70, 70, 70);
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.big-font4 {
+    color: #555;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.big-font6 {
+    color: #555;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+
+.little-font1 {
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.little-font2 {
+    color: #888;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.little-font3 {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.little-font4 {
+    color: #888;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.little-font5 {
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.little-font6 {
+    color: #555;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+/* 块级元素文字居中 */
+
+.text-center {
+    text-align: center;
+}
+
+/* 行内元素文本水平垂直居中 */
+
+.inline-center {
+    display: block;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+}
+
+/* 行内元素文本水平垂直居左 */
+
+.inline-left {
+    display: block;
+    position: relative;
+    top: 50%;
+    text-align: left;
+    transform: translate(0, -50%);
+}
+
+/* 行内元素文本水平垂直居右 */
+
+.inline-right {
+    display: block;
+    position: relative;
+    top: 50%;
+    text-align: right;
+    transform: translate(0, -50%);
+}
+
+/* 让子元素水平垂直居中 */
+
+.child-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 让子元素垂直居右 */
+
+.child-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 让子元素垂直居右 */
+
+.child-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 让子元素垂直居中，两边无缝隙 */
+
+.child-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 让子元素环绕布局 */
+
+.child-around {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* 让子元素竖直水平居中排列 */
+
+.child-col-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pd {
+    padding: 40rpx;
+    box-sizing: border-box;
+}
+
+.none {
+    display: none;
+}
+
+.label {
+    width: 100%;
+    margin-bottom: 30rpx;
+}
+
+.table,
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 50rpx;
+}
+
+.th {
+    width: 50%;
+    height: 100rpx;
+    background-color: rgba(173, 202, 157, 0.137);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: 1rpx solid #eee;
+    border-right: none;
+    font-weight: bold;
+    color: #555;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: -1rpx;
+}
+
+.tr {
+    width: 50%;
+    height: 100rpx;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: 1rpx solid #eee;
+    box-sizing: border-box;
+    color: #555;
+    justify-content: center;
+    margin-top: -1rpx;
+}
+
+.tline {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 600rpx;
+    height: 450rpx;
+    border: 1rpx solid rgb(214, 212, 212);
+    border-radius: 10rpx;
+    background: #fff;
+    margin-bottom: 80rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-top,
+.card-bottom {
+    padding: 30rpx;
+    box-sizing: border-box;
+}
+
+.card-top {
+    flex: 18;
+    border-bottom: 1rpx solid rgb(214, 212, 212);
+    display: flex;
+    align-items: center;
+}
+
+
+.card-bottom {
+    flex: 2;
+    /* border: 1px solid #ccc; */
+}
+
+.card-top image {
+    flex: 4;
+    height: 80%;
+    padding: 10rpx;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+}
+
+.card-top .details {
+    flex: 6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20rpx;
+    box-sizing: border-box;
+    /* border: 1px solid #ccc; */
+}
+
+.details .title {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1rpx solid #ccc; */
+}
+
+.details .jianjie {
+    flex: 7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1rpx solid #ccc; */
+}
+
+.forum-add {
+    width: 110rpx;
+    height: 110rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 75%;
+    top: 85%;
+    border-radius: 50%;
+    background-color: #23f1ad;
+}
+
+.forum-add image {
+    width: 60rpx;
+    height: 60rpx;
+    margin: 0;
+}

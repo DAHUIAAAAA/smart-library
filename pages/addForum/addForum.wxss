@@ -1,0 +1,95 @@
+/* 发布论坛内容模块 */
+
+page, .add-container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+.add-container {
+    background-color: rgba(160, 160, 160, 0.116);
+}
+
+/* 论坛头部 */
+
+.top {
+    height: 10%;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 0 0 30rpx 3rpx rgba(0, 0, 0, 0.1);
+}
+
+.top-bar {
+    height: 60rpx;
+    width: 380rpx;
+    border-radius: 60rpx;
+    border: 5rpx solid #555;
+    background: #23f1ad;
+    justify-content: around;
+}
+
+/* 标题栏 */
+.title-section {
+    height: 50rpx;
+    width: 100%;
+    margin-bottom: 180rpx;
+    padding: 130rpx 30rpx 30rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.label {
+    color: #555;
+    font-size: 15px;
+    margin: 30rpx 0 30rpx 0;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.title-section input {
+    font-size: 13px;
+    background-color: #fff;
+    height: 65rpx;
+    padding: 5rpx 20rpx 5rpx 20rpx;
+    border-radius: 10rpx;
+    letter-spacing: 5rpx;
+}
+
+/* 内容栏 */
+.content-section {
+    width: 100%;
+    padding: 0 30rpx 40rpx 30rpx;
+    box-sizing: border-box;
+}
+
+.content-section textarea {
+    width: 100%;
+    font-size: 13px;
+    background-color: #fff;
+    height: 350rpx;
+    padding: 25rpx 20rpx 10rpx 25rpx;
+    border-radius: 10rpx;
+    letter-spacing: 5rpx;
+    box-sizing: border-box;
+}
+
+.addMessage-section {
+    padding: 0 30rpx 30rpx 30rpx;
+}
+
+/* 发布内容 */
+.addMessage-section button {
+    width: 100%;
+    height: 85rpx;
+    border-radius: 10rpx;
+    background-color: #23f1ad;
+    color: #fff;
+    font-size: 16px;
+    padding: 0;
+    letter-spacing: 20rpx;
+}
+
+button:after {
+    border: none;
+}

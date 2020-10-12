@@ -1,0 +1,64 @@
+<!-- 论坛页面 -->
+<view class="forum-container">
+    <!-- 论坛头部 -->
+    <view class="top child-around">
+        <view class="top-bar">
+            <text class="inline-center little-font1">图书馆论坛</text>
+        </view>
+    </view>
+    <!-- 置顶信息 -->
+    <view class="top-message-container">
+        <view class="top-message child-left">
+            <view class="top-roof">置顶</view>
+            <view class="top-roof-text"> 图书馆举办学术讲座</view>
+        </view>
+        <view class="top-message child-left">
+            <view class="top-roof">置顶</view>
+            <view class="top-roof-text">我馆举办学术论文写作知识讲座</view>
+        </view>
+        <view class="top-message child-left">
+            <view class="top-roof">置顶</view>
+            <view class="top-roof-text">图书馆举办拉康理论主题读书沙龙</view>
+        </view>
+    </view>
+    <!-- 论坛信息 -->
+    <view class="forum-message-container">
+        <block wx:for="{{forum}}" wx:key="{{index}}">
+            <view class="forum-message" bindtap="goToDetail" data-forumid="{{item.forum_id}}">
+                <!-- 头像 -->
+                <view class="forum-image-container">
+                    <view class="forum-image">
+                        <image mode="aspectFill" src="{{item.src}}" alt="" />
+                    </view>
+                    <view class="forum-name">{{item.name}}</view>
+                </view>
+                <!-- 标题、浏览量、评论人数 -->
+                <view class="forum-sidetop-container">
+                    <view class="forum-time">{{item.date}}</view>
+                    <view class="forum-title">{{item.title}}</view>
+                    <view class="forum-content">
+                        {{item.content}}
+                    </view>
+                </view>
+                <!-- 底部栏，包括海大图书馆标注、评论人数、浏览人数 -->
+                <view class="forum-bottom-container">
+                    <view class="forum-sign">海大图书馆</view>
+                    <view class="forum-icon">
+                        <view class="icon-comment" style="margin-right: 20rpx">
+                            <image mode="aspectFill" src="/iconfont/pinglun.png" alt="" />
+                            <text class="icon-text">{{item.comment}}</text>
+                        </view>
+                        <view class="icon-browse">
+                            <image mode="aspectFill" src="/iconfont/pinglun.png" alt="" />
+                            <text class="icon-text">{{item.browse}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <!-- 增加内容 -->
+    <view class="forum-add" bindtap="addPost">
+        <image class="" mode="aspectFill" src="/iconfont/zenjia.png"></image>
+    </view>
+</view>

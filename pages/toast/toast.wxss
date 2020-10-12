@@ -1,0 +1,39 @@
+/* pages/toast/toast.wxss */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card {
+    height: 600rpx;
+    border: none;
+    margin-bottom: 200px;
+}
+
+.row {
+    /* border: 1px solid #ccc; */
+}
+
+.wendu,
+.kongqizhiliang,
+.chuanyitixing {
+    margin-bottom: 0;
+    justify-content: center;
+}
+
+.wendu {
+    flex: 8;
+}
+
+.kongqizhiliang {
+    flex: 2;
+}
+
+.chuanyitixing {
+    flex: 2;
+}

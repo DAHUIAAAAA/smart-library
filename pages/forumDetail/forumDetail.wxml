@@ -1,0 +1,67 @@
+<!-- 论坛详情页 -->
+<!-- 最大的父容器 -->
+<view class="container">
+    <!-- 标题栏 -->
+    <view class="title">{{forumdetail.title}}</view>
+    <!-- 头像、名字、回复、浏览量 -->
+    <view class="top-bar">
+        <view class="leftside-container">
+            <view class="image">
+                <image src="{{forumdetail.src}}" mode="aspectFill"></image>
+            </view>
+        </view>
+        <view class="rightside-container">
+            <view class="name">本帖子作者：{{forumdetail.name}}</view>
+            <view class="text">浏览量：{{forumdetail.browse}}</view>
+            <view class="text">评论量：{{forumdetail.comment}}</view>
+        </view>
+    </view>
+    <!-- 正文部分 -->
+    <view class="content">
+        <text class="" selectable="false" space="false" decode="false">
+            {{forumdetail.content}}
+        </text>
+    </view>
+    <!-- 发表评论部分 -->
+    <view class="sendComment">
+        <view class="line"></view>
+        <view class="sendComment-img">
+            <image class="" src="/iconfont/fasongpinglun.png" mode="aspectFill" lazy-load="false" binderror="" bindload=""></image>
+        </view>
+        <view class="sendComment-text">发表评论</view>
+    </view>
+    <!-- 评论部分 -->
+    <view class="comment">
+        <view class="comment-title">评论</view>
+        <view class="comment-container">
+            <view class="leftside-container">
+                <view class="image comment-image">
+                    <image src="{{forumdetail.src}}" mode="aspectFill"></image>
+                </view>
+                <view class="text">{{forumdetail.name}}</view>
+            </view>
+            <view class="rightside-container">
+                <view class="comment-content">
+                    <text class="comment-text" selectable="false" space="false" decode="false">
+                        说得太棒了！
+                    </text>
+                </view>
+            </view>
+        </view>
+        <view class="comment-container">
+            <view class="leftside-container">
+                <view class="image comment-image">
+                    <image src="{{forumdetail.src}}" mode="aspectFill"></image>
+                </view>
+                <view class="text">{{forumdetail.name}}</view>
+            </view>
+            <view class="rightside-container">
+                <view class="comment-content">
+                    <text class="comment-text" selectable="false" space="false" decode="false">
+                        可以可以！
+                    </text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

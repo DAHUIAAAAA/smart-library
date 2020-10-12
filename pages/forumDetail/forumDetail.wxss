@@ -1,0 +1,173 @@
+/* 论坛详情页 */
+
+page, .container {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: rgba(160, 160, 160, 0.116);
+}
+
+/* 标题栏 */
+
+.title {
+    width: 100%;
+    font-size: 17px;
+    font-weight: bold;
+    color: #555;
+    background-color: #fff;
+    padding: 60rpx;
+}
+
+/* 头部信息栏 */
+
+.top-bar {
+    width: 100%;
+    height: 120rpx;
+    padding: 0 60rpx 60rpx;
+    display: flex;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.leftside-container {
+    flex: 2;
+    height: 100%;
+}
+
+.image {
+    height: 90rpx;
+    width: 90rpx;
+    border-radius: 50%;
+    margin-bottom: 35rpx;
+    margin-right: 30rpx;
+    background-color: #888;
+    overflow: hidden;
+}
+
+.image image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.rightside-container {
+    flex: 13;
+    height: 100%;
+}
+
+.name {
+    width: 50%;
+    font-size: 13px;
+    color: #23f1ad;
+    font-weight: bold;
+}
+
+.text {
+    width: 50%;
+    font-size: 11px;
+    color: #999;
+    display: inline-block;
+}
+
+/* 正文部分 */
+
+.content {
+    width: 100%;
+    padding: 30rpx 60rpx 30rpx;
+    box-sizing: border-box;
+    font-size: 14px;
+    margin-top: -40rpx;
+    background: #fff;
+    color: #777;
+}
+
+.content text {
+    letter-spacing: 2px;
+}
+
+/* 发表评论部分 */
+
+.sendComment {
+    width: 100%;
+    padding-bottom: 50rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50rpx;
+}
+
+.sendComment-img {
+    width: 120rpx;
+    height: 120rpx;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -60rpx;
+}
+
+.sendComment-img image {
+    width: 75rpx;
+    height: 75rpx;
+}
+
+.line {
+    width: 100%;
+    margin: 0 60rpx;
+    border-top: 1rpx solid #eee;
+}
+
+.sendComment-text {
+    width: 100%;
+    color: #777;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.comment {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comment-title {
+    width: 100%;
+    color: #555;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 60rpx;
+    box-sizing: border-box;
+    margin-bottom:20rpx;
+}
+
+.comment-container {
+    width: 100%;
+    display: flex;
+    padding: 30rpx 60rpx 30rpx;
+}
+
+.comment-image {
+    margin: 0;
+}
+
+.leftside-container .text {
+    width: 100%;
+    text-align: center;
+}
+
+.comment-content {
+    width: 100%;
+    margin-top: -60rpx;
+    margin-left: 50rpx;
+}
+
+.comment-text {
+    color: #999;
+    font-size: 12px;
+}

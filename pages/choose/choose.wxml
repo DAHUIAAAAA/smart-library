@@ -1,0 +1,89 @@
+<!--pages/choose/choose.wxml-->
+<view class="page">
+
+  <view class="top child-around">
+
+      <view class="top-bar">
+        <text class="inline-center little-font1">选择查看</text>
+      </view>
+
+  </view>
+
+
+    <view class="main">
+
+      <!-- 图书馆位置查询板块 -->
+      <view class="section section-library" bindtap="gotolibrary">
+        
+        <view class="title">
+          <text class="inline-left big-font4 font-bold">图书馆位置查询</text>
+        </view>
+
+        <view class="content">
+          <view class="little-font2">
+            实时监控图书馆座位情况，包括有无座等情况，点击进入了解详情
+          </view>
+        </view>
+
+        <view class="section-foot child-between">
+          <view class="foot-left little-font2">
+            <text class="inline-left">了解详情</text>
+          </view>
+          <view class="foot-right child-right">
+            <view class="foot-right-after"></view>
+          </view>
+        </view>
+
+      </view>
+
+      <!-- 图书馆排行板块 -->
+      <view class="section secction" bindtap="gotolibraryrank">
+      
+        <view class="title">
+          <text class="inline-left big-font4 font-bold">图书排行榜</text>
+        </view>
+
+        <view class="content">
+          <view class="little-font2">
+            这里有图书的新鲜资讯，集结了大家都爱看的书籍，快来看看吧
+          </view>
+        </view>
+
+        <view class="section-foot child-between">
+          <view class="foot-left little-font2">
+            <text class="inline-left">了解详情</text>
+          </view>
+          <view class="foot-right child-right">
+            <view class="foot-right-after"></view>
+          </view>
+        </view>
+        
+      </view> 
+      
+      <!-- 论坛板块 -->
+       <view class="section section-library" bindtap="gotoForum">
+        
+        <view class="title">
+          <text class="inline-left big-font4 font-bold">图书交流论坛</text>
+        </view>
+
+        <view class="content">
+          <view class="little-font2">
+            与志同道合的同学相互交流作品，了解更多的咨询，认识更多有趣的灵魂
+          </view>
+        </view>
+
+        <view class="section-foot child-between">
+          <view class="foot-left little-font2">
+            <text class="inline-left">了解详情</text>
+          </view>
+          <view class="foot-right child-right">
+            <view class="foot-right-after"></view>
+          </view>
+        </view>
+
+      </view>
+
+    </view>
+
+</view>

@@ -1,0 +1,18 @@
+/* pages/newbooks/newbooks.wxss */
+.icon {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.message {
+    flex: 1;
+    /* width: 600rpx; */
+}
+
+.row {
+    justify-content: center;
+}
+
+.title {
+    font-size: 18px;
+}

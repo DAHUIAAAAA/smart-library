@@ -1,0 +1,38 @@
+<!--pages/book/book.wxml-->
+<view class="page">
+
+  <!-- 头部bar栏 -->
+  <view class="top child-around">
+
+      <view class="top-bar">
+        <text class="inline-center little-font1">图书排行</text>
+      </view>
+
+  </view>
+
+  <scroll-view class="main" scroll-y="true">
+  
+    <block wx:for="{{ book }}" wx:key="{{ index }}">
+      <view class="section-container">
+        <view class="section section-library" bindtap="gotolibrary">
+          <view class="title">
+            <text class="inline-left little-font2 font-bold" style="color: #555">{{item.name}}</text>
+          </view>
+          <view class="content child-between">
+            <view class="little-font5 content-text">
+              <view class="font-bold">
+                <text>排名：{{ item.rank }}</text>
+                <text style="display:inline-block; margin-left: 50rpx">借阅量：{{ item.num }}</text>
+              </view>
+              <view>作者：{{ item.author }}</view>
+              <view>出版时间：{{ item.time }}</view>
+              <view>出版社：{{ item.press }}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>  
+
+  </scroll-view>
+
+</view>

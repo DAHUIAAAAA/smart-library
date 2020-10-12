@@ -1,0 +1,59 @@
+<view class="page">
+
+    <!-- 头部bar栏 -->
+    <view class="top child-around">
+
+        <view class="top-bar">
+            <text class="inline-center little-font1">管理月报表</text>
+        </view>
+
+    </view>
+
+    <scroll-view class="main pd" scroll-y="true">
+        <view class="zhanzuo">
+            <view class="label normal-font2 font-bold">占座情况</view>
+            <view class="table">
+                <view class="tline">
+                    <view class="th">月总占座人数/人</view>
+                    <view class="tr">53</view>
+                </view>
+                <view class="tline">
+                    <view class="th">日平均占座人数/人</view>
+                    <view class="tr">176</view>
+                </view>
+                <view class="tline">
+                    <view class="th">占学校人数百分比/%</view>
+                    <view class="tr">0.26</view>
+                </view>
+                <view class="tline">
+                    <view class="th">与上个月相比/%</view>
+                    <view class="tr">↓0.12</view>
+                </view>
+                <view class="tline">
+                    <view class="th">清理占座人数/人</view>
+                    <view class="tr">49</view>
+                </view>
+            </view>
+            <view class="label normal-font2 font-bold">图书借阅情况</view>
+            <view class="table">
+                <view class="tline">
+                    <view class="th">本月借书人数/人</view>
+                    <view class="tr">1023</view>
+                </view>
+                <view class="tline">
+                    <view class="th">本月总借出图书/人</view>
+                    <view class="tr">2013</view>
+                </view>
+                <view class="tline">
+                    <view class="th">平均每人借出图书/本</view>
+                    <view class="tr">1.96</view>
+                </view>
+                <view class="tline">
+                    <view class="th">没有按时归还人数/人</view>
+                    <view class="tr">23</view>
+                </view>
+            </view>
+        </view>
+    </scroll-view>
+
+</view>

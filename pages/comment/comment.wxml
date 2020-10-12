@@ -1,0 +1,46 @@
+<!--pages/comment/comment.wxml-->
+<view class="page">
+
+    <!-- 头部bar栏 -->
+    <view class="top child-around">
+
+        <view class="top-bar">
+            <text class="inline-center little-font1">用户评论</text>
+        </view>
+
+    </view>
+
+    <scroll-view class="main pd" scroll-y="true">
+        <view class="row">
+            <view class="card">
+                <view class="card-left">
+                    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2292369775,1619097844&fm=27&gp=0.jpg" mode="aspectFit"></image>
+                </view>
+                <view class="card-right little-font6">
+                    我觉得图书馆的有些地方还可以再改进一下，比如说我们可以在图书馆弄一个失物招领提醒，每天由图书馆在微信小程序发布实物的图片，并弄一个全体学生提醒功能，
+                </view>
+            </view>
+            <view class="card">
+                <view class="card-left">
+                    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2292369775,1619097844&fm=27&gp=0.jpg" mode="aspectFit"></image>
+                </view>
+                <view class="card-right little-font6">
+                    我觉得图书馆的有些地方还可以再改进一下，比如说我们可以在图书馆弄一个失物招领提醒，每天由图书馆在微信小程序发布实物的图片，并弄一个全体学生提醒功能，
+                </view>
+            </view>
+            <view class="card">
+                <view class="card-left">
+                    <image src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2292369775,1619097844&fm=27&gp=0.jpg" mode="aspectFit"></image>
+                </view>
+                <view class="card-right little-font6">
+                    我觉得图书馆的有些地方还可以再改进一下，比如说我们可以在图书馆弄一个失物招领提醒，每天由图书馆在微信小程序发布实物的图片，并弄一个全体学生提醒功能，
+                </view>
+            </view>
+
+        </view>
+
+        <view class="forum-add" bindtap="gotoAddForum">
+            <image class="" mode="aspectFill" src="/iconfont/zenjia.png"></image>
+        </view>
+    </scroll-view>
+</view>

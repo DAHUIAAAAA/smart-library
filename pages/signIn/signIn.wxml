@@ -1,0 +1,61 @@
+<view class="page">
+  <view class="formContainer">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+        获 取头像昵称
+      </button>
+      <block wx:else>
+        <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="little-font1">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+    <form class="userForm">
+      <view class="userForm-container">
+        <!-- <text class="big-font1">用户登录</text> -->
+        <view class="userForm-input">
+          <view class="user-icon">
+            <image src="iconfont/user.png" class="inline-center"></image>
+          </view>
+          <input type="text" class="user-text" bindinput="getname" placeholder="输入学号或者工号" placeholder-style='color: #ffffffe0' value="{{ inputvalue }}"></input>
+          <view class="user-icon user-icon-right {{noneorblock}}" bindtap="removename">
+            <image src="iconfont/chahao2.png" class="inline-center"></image>
+          </view>
+        </view>
+        <!-- <view class="userForm-input">
+          <view class="user-icon {{isshow}}">
+            <image src="iconfont/mima.png" class="inline-center"></image>
+          </view>
+          <input class="user-text" type="{{ passwordtype }}" bindinput="getpassword" placeholder="输入密码" placeholder-class="input-placeholder"></input>
+          <view class="user-icon user-icon-right" bindtap="isshowpassword">
+            <image src="{{ showpassword }}" class="inline-center"></image>
+          </view>
+        </view> -->
+        <!-- <view class="userForm-input">
+          <view class="user-icon">
+            <image src="iconfont/zhuanye.png" class="inline-center"></image>
+          </view>
+          <picker class="user-text child-between" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="little-font1" style="color: #ffffffe0">{{array[index]}}</view>
+          </picker>
+          <view class="user-icon user-icon-right">
+            <image src="iconfont/xiajiantou.png" class="inline-center"></image>
+          </view>
+        </view> -->
+        <!-- <scroll-view class="showmajor"></scroll-view> -->
+      </view>
+      <view class="signIn">
+        <view class="big-font2" bindtap='signin'>
+          <text class="inline-center">一键授权</text>
+        </view>
+      </view>
+    </form>
+    <!-- <view class="user-registration">
+        <view>
+          <navigator class="inline-left little-font1">忘记密码？</navigator>
+        </view>
+        <view>
+          <navigator class="inline-right little-font1">点击注册</navigator>
+        </view>
+    </view> -->
+  </view>
+</view>
